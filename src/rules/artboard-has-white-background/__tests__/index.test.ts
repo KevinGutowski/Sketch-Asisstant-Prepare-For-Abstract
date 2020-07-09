@@ -1,18 +1,14 @@
 import { resolve } from 'path'
 import { testRuleInAssistant } from '@sketch-hq/sketch-assistant-utils'
-
-import { helloWorldRule } from '../'
+import { artboardHasWhiteBackground } from '../'
 import Assistant from '../../../'
 
-test('hello-world', async () => {
-  expect.assertions(2)
-
+test('artboard-has-white-background', async () => {
   const { violations, ruleErrors } = await testRuleInAssistant(
-    resolve(__dirname, './empty.sketch'),
+    resolve(__dirname, './lorem-ipsum.sketch'),
     Assistant,
-    helloWorldRule.name,
+    artboardHasWhiteBackground.name,
   )
-
-  expect(violations[0].message).toMatchInlineSnapshot(`"Hello world"`)
+  expect(violations).toHaveLength(1)
   expect(ruleErrors).toHaveLength(0)
 })

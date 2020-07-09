@@ -1,4 +1,4 @@
-# sketch-assistant-template
+# Perpare For Abstract
 
 > 💁‍♀️ This repository contains a starter project for developing a new Assistant.
 
@@ -76,7 +76,9 @@ Sketch document.
 1. Sketch will check the disk location for updates to the tarball, so you can continue to re-build
    the Assistant to the same location and see live updates in Sketch
 
-> ⚠️ Assistants must be published to be used across multiple devices or within a team. Sketch documents with local Assistants added to them are not portable because the Assistant is referenced using a file path.
+> ⚠️ Assistants must be published to be used across multiple devices or within a team. Sketch
+> documents with local Assistants added to them are not portable because the Assistant is referenced
+> using a file path.
 
 ## Publish the Assistant
 

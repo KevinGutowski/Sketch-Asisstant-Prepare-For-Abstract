@@ -1,15 +1,15 @@
 import { AssistantPackage } from '@sketch-hq/sketch-assistant-types'
 
-import { helloWorldRule } from './rules/hello-world'
+import { artboardHasWhiteBackground } from './rules/artboard-has-white-background'
 
 const assistant: AssistantPackage = [
   async () => {
     return {
-      name: 'sketch-assistant-template',
-      rules: [helloWorldRule],
+      name: 'Prepare for Abstract',
+      rules: [artboardHasWhiteBackground],
       config: {
         rules: {
-          [helloWorldRule.name]: { active: true },
+          [artboardHasWhiteBackground.name]: { active: true },
         },
       },
     }
