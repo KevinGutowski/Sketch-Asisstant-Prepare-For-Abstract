@@ -8,7 +8,7 @@
   "sketch-assistant": {
     "title": "Prepare for Abstract",
     "description": "Template repository for a starter Assistant project",
-    "icon": "dist/icon.png"
+    "icon": "https://raw.githubusercontent.com/KevinGutowski/Sketch-Assistant-Prepare-For-Abstract/main/assets/icon.png"
   },
   "keywords": [
     "sketch",
